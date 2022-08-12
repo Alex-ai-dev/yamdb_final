@@ -41,7 +41,6 @@ jobs:
         uses: actions/checkout@v2  
       - name: Change directory
         run: |
-          cd yamdb_final/
           cd api_yamdb/
       - name: Set up Docker Buildx
         # Вызов сборщика контейнеров docker

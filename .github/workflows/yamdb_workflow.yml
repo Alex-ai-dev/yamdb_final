@@ -36,9 +36,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: tests
     steps:
-      - name: Change directory
-        run: |
-          cd yamdb_final/api_yamdb/
+      # - name: Change directory
+      #   run: |
+          # cd yamdb_final/api_yamdb/
       - name: Check out the repo
         # Проверка доступности репозитория Docker Hub для workflow
         uses: actions/checkout@v2 

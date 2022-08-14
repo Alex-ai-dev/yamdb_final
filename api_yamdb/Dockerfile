@@ -1,11 +1,11 @@
 FROM python:3.7-slim
 
-RUN mkdir /app
+WORKDIR app/
 
-COPY ./api_yamdb /app
+COPY requirements.txt .
 
-RUN pip install -r /app/requirements.txt --no-cache-dir
+RUN pip install -r requirements.txt --no-cache-dir
 
-WORKDIR app/api_yamdb/
+COPY . /app
 
 CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ]

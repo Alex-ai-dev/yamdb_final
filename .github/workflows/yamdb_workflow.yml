@@ -69,6 +69,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
         script: |
+          cd infra/
           sudo docker-compose stop
           sudo docker_compose rm web
           sudo docker-compose up -d

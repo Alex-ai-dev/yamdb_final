@@ -1,3 +1,4 @@
+https://github.com/alex-ai-dev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 ## Проект YaMDb
 
 ## Описание проекта

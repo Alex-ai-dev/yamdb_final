@@ -23,7 +23,7 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         touch infra/.env
-        echo SECRET_KEY=${{ secrets.SEСRET_KEY }} >> infra/.env
+        echo SECRET_KEY='${{ secrets.SEСRET_KEY }}' >> infra/.env
         python -m flake8
         pytest
   build_and_push_to_docker_hub:

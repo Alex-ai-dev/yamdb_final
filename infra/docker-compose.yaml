@@ -8,7 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    image: alexaidev/infra_actions:lastest
+    image:   alexaidev/infra_actions:lastest
+    restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/

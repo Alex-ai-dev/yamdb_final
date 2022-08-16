@@ -21,9 +21,9 @@ jobs:
         pip install -r requirements.txt 
 
     - name: Test with flake8 and django tests
+      env:
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
-        touch infra/.env
-        echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> infra/.env
         python -m flake8
         pytest
   build_and_push_to_docker_hub:

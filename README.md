@@ -10,58 +10,6 @@
 Благодарные или возмущённые пользователи оставляют к произведениям текстовые отзывы (Review) и ставят произведению оценку в диапазоне от одного до десяти (целое число); из пользовательских оценок формируется усреднённая оценка произведения — рейтинг (целое число). На одно произведение пользователь может оставить только один отзыв.
 Для реализации проекта используются Django 2.2.16, Django REST Framework 3.12.4
 
-## Как запустить проект:
-
-Клонировать репозиторий и перейти в него в командной строке:
-
-```bash
-git clone https://github.com/Alex-ai-dev/infra_sp2.git
-```
-
-Запустить приложение в контейнерах:
-
-*из директории `infra/`*
-```bash
-docker-compose up -d --build
-```
-
-Выполнить миграции:
-
-*из директории `infra/`*
-```bash
-docker-compose exec web python manage.py migrate
-```
-
-Создать суперпользователя:
-
-*из директории `infra/`*
-```bash
-docker-compose exec web python manage.py createsuperuser
-```
-
-Собрать статику:
-
-*из директории `infra/`*
-```bash
-docker-compose exec web python manage.py collectstatic --no-input
-```
-
-Остановить приложение в контейнерах:
-
-*из директории `infra/`*
-```bash
-docker-compose down -v
-```
-
-### описание команды для заполнения базы данными
-
-```bash
-cd api_yamdb 
-```
-```bash
-python manage.py loaddata ../infra/fixtures.json
-```
-
 ### шаблон наполнения env-файла
 
 ```bash

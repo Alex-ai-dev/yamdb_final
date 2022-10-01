@@ -1,6 +1,6 @@
 ![([https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg]](https://github.com/alex-ai-dev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-## [Проект YaMDb](http://yandextube.sytes.net/api/v1/)
+## Проект YaMDb
 
 ## Описание проекта
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Titles). Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий (Category) может быть расширен администратором (например, можно добавить категорию «Изобразительное искусство» или «Ювелирка»).
